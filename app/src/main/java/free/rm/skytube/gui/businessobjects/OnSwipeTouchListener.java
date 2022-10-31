@@ -182,7 +182,7 @@ public abstract class OnSwipeTouchListener implements View.OnTouchListener {
 			} else if (swipeEventType == SwipeEventType.BRIGHTNESS) {
 				// use half of BrightnessRect's height to calculate percent.
 				double percent = yDistance / (getBrightnessRect().height() / 2.0f) * -1.0f;
-				adjustBrightness(percent);
+				adjustVolumeLevel(percent);
 			} else if (swipeEventType == SwipeEventType.VOLUME) {
 				// use half of volumeRect's height to calculate percent.
 				double percent = yDistance / (getVolumeRect().height() / 2.0f) * -1.0f;
